@@ -1,0 +1,184 @@
+body {
+    width: 960px;
+    margin:auto;
+    color:#777777;
+    background-image:url(../images/what-the-hex.png);
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#ffffff;
+}
+
+.headerName {
+    background-color: #4aaaa5;
+    color:#ffffff;
+    font-size:26px;
+    font-weight: bold;
+    padding:20px;
+}
+
+.headerLink {
+    color:#777777;
+    text-decoration: none;
+    padding:15px;
+    border-right: 1px solid #cccccc;
+}
+
+.headerLink:hover {
+    color:#ffffff;
+    background-color:#4f87ee;
+    transition:1s;
+}
+
+.headerLink:last-child {
+    border-right: none;
+}
+
+.mainContainer {
+    background-color:#ffffff;
+    border: 1px solid #dddddd;
+    padding:20px;
+    margin-top:20px;
+}
+
+footer {
+    border-top: 5px solid #4aaaa5;
+    background-color:#666666;
+    color:#ffffff;
+    font-size:10px;
+    text-align:center;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    padding:1% 1% 0.2% 1%;
+}
+
+h1 {
+    color:#4aaaa5;
+}
+
+hr {
+    border-color:#e0dede;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    margin: 5px 0px 10px 0px;
+}
+
+textarea {
+    width: 90%;
+    margin: 5px 0px 10px 0px;
+}
+
+button {
+    background-color:#4aaaa5;
+    color:#ffffff;;
+    border:none;
+    padding:10px 30px 10px 30px;
+}
+
+#img_headshot {
+    float:left;
+    width:220px;
+    padding-right:20px;
+}
+
+.aboutText {
+    font-size:20px;
+    line-height:30px;
+}
+
+.portfolioContainer {
+    display:flex;
+    flex-flow:row wrap;
+    margin-top:30px;
+}
+
+.portfolioItem {
+    position:relative;
+    margin: 0px 30px 30px 0px;
+}
+
+.portfolioLabel {
+    background-color:#4aaaa5;
+    color:#ffffff;;
+    width:100%;
+    text-align: center;
+    font-size:20px;
+    position:absolute;
+    bottom:30px;
+    padding:20px 0px 20px 0px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 980px) { 
+    body {
+        width:760px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    body {
+        width:630px;
+        justify-content: center;
+    }
+
+    .portfolioItem img {
+        width:250px;
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    body {
+        width:580px;
+        justify-content: center;
+    }
+
+    .headerContainer {
+        flex-wrap:wrap;
+        text-align: center;
+    }
+
+    .headerName {
+        width:100%;
+    }
+
+    .headerContainer nav {
+        width:100%;
+        padding:15px;
+        background-color:#ffffff;
+        text-align: center;
+    }
+
+    #img_headshot {
+        float:none;
+        display:block;
+        width:80%;
+        margin:auto;
+        justify-content: center;
+    }
+
+    .mainContainer {
+        justify-content: center;
+        margin-bottom:50px;
+    }
+
+    .portfolioContainer {
+        justify-content: center;
+    }
+
+    .portfolioItem img {
+        width: 500px;
+    }
+}
